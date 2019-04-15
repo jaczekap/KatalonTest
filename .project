@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>M%%KatalonStudio%SimpleRESTTest%SimpleRESTTest.prj</name>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>org.eclipse.jdt.core.javabuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>org.eclipse.jdt.groovy.core.groovyNature</nature>
+		<nature>org.eclipse.jdt.core.javanature</nature>
+	</natures>
+	<linkedResources>
+		<link>
+			<name>kat-1368050675625475642.groovy</name>
+			<type>1</type>
+			<location>C:/Users/User/AppData/Local/Temp/Katalon/Web Services/kat-1368050675625475642.groovy</location>
+		</link>
+		<link>
+			<name>kat-571807366486084551.groovy</name>
+			<type>1</type>
+			<location>C:/Users/User/AppData/Local/Temp/Katalon/Web Services/kat-571807366486084551.groovy</location>
+		</link>
+		<link>
+			<name>kat-7545887487045835621.groovy</name>
+			<type>1</type>
+			<location>C:/Users/User/AppData/Local/Temp/Katalon/Web Services/kat-7545887487045835621.groovy</location>
+		</link>
+		<link>
+			<name>kat-7990608550183806171.groovy</name>
+			<type>1</type>
+			<location>C:/Users/User/AppData/Local/Temp/Katalon/Web Services/kat-7990608550183806171.groovy</location>
+		</link>
+		<link>
+			<name>kat-8338216457666231774.groovy</name>
+			<type>1</type>
+			<location>C:/Users/User/AppData/Local/Temp/Katalon/Web Services/kat-8338216457666231774.groovy</location>
+		</link>
+		<link>
+			<name>kat-8761249988016936966.groovy</name>
+			<type>1</type>
+			<location>C:/Users/User/AppData/Local/Temp/Katalon/Web Services/kat-8761249988016936966.groovy</location>
+		</link>
+	</linkedResources>
+	<filteredResources>
+		<filter>
+			<id>1555259995959</id>
+			<name></name>
+			<type>10</type>
+			<matcher>
+				<id>org.eclipse.core.resources.regexFilterMatcher</id>
+				<arguments>.*\.svn$</arguments>
+			</matcher>
+		</filter>
+		<filter>
+			<id>1555259996111</id>
+			<name></name>
+			<type>6</type>
+			<matcher>
+				<id>org.eclipse.core.resources.regexFilterMatcher</id>
+				<arguments>(.*\.svn-base$)|(.*\.png$)|(.*\.log$)|(.*\.xlsx$)|(.*\.xls$)|(.*\.csv$)|(.*\.txt$)</arguments>
+			</matcher>
+		</filter>
+	</filteredResources>
+</projectDescription>

@@ -1,0 +1,10 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+TestSuite1,,,2019-04-15 18:40:29,2019-04-15 18:40:36,"7,271s",PASSED
+,,,,,,
+Test Cases/Calculator_Add_Test,,,2019-04-15 18:40:29,2019-04-15 18:40:36,"6,707s",PASSED
+"response = sendRequest(findTestObject(""SOAP/Add"", [""number1"":""2"", ""number2"":""9""]))",,,2019-04-15 18:40:30,2019-04-15 18:40:33,"3,521s",PASSED
+"verifyResponseStatusCode(response, 200)",,,2019-04-15 18:40:33,2019-04-15 18:40:33,"0,026s",PASSED
+"containsString(response, ""11"", false)",,,2019-04-15 18:40:33,2019-04-15 18:40:34,"0,325s",PASSED
+comment(response.getResponseBodyContent()),,,2019-04-15 18:40:34,2019-04-15 18:40:34,"0,068s",PASSED
+"verifyElementText(response, ""AddResponse.AddResult"", ""11"")",,,2019-04-15 18:40:34,2019-04-15 18:40:34,"0,155s",PASSED
+"sendRequestAndVerify(findTestObject(""SOAP/Add""))",,,2019-04-15 18:40:34,2019-04-15 18:40:36,"2,090s",PASSED

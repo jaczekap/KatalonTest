@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="TestSuite1" time="7" tests="1" failures="0" errors="0">
+   <testsuite name="TestSuite1" tests="1" failures="0" errors="0" time="7" timestamp="2019-04-15 18:40:29" hostname="User - DESKTOP-EIUQFPA" id="Test Suites/TestSuite1">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="M:\\KatalonStudio\\SimpleRESTTest\\Reports\\TestSuite1\\20190415_184020"/>
+         <property name="logFiles" value="M:\\KatalonStudio\\SimpleRESTTest\\Reports\\TestSuite1\\20190415_184020\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="User - DESKTOP-EIUQFPA"/>
+         <property name="hostAddress" value="192.168.91.1"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="6.1.1.1"/>
+      </properties>
+      <testcase name="Test Cases/Calculator_Add_Test" classname="Test Cases/Calculator_Add_Test" status="PASSED">
+         <system-out><![CDATA[2019-04-15 18:40:29 - [TEST_CASE][PASSED] - Test Cases/Calculator_Add_Test: Test Cases/Calculator_Add_Test
+
+2019-04-15 18:40:30 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("SOAP/Add", ["number1":"2", "number2":"9"])): Send request successfully
+
+2019-04-15 18:40:33 - [MESSAGE][INFO] - HAR: M:\KatalonStudio\SimpleRESTTest\Reports\TestSuite1\20190415_184020\requests\main\0.har
+
+2019-04-15 18:40:33 - [MESSAGE][PASSED] - Send request successfully
+
+2019-04-15 18:40:33 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+2019-04-15 18:40:33 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2019-04-15 18:40:33 - [TEST_STEP][PASSED] - containsString(response, "11", false): Check contain string successfully
+
+2019-04-15 18:40:34 - [MESSAGE][PASSED] - Check contain string successfully
+
+2019-04-15 18:40:34 - [TEST_STEP][PASSED] - comment(response.getResponseBodyContent()): <AddResponse xmlns="http://tempuri.org/"><AddResult>11</AddResult></AddResponse>
+
+2019-04-15 18:40:34 - [MESSAGE][INFO] - <AddResponse xmlns="http://tempuri.org/"><AddResult>11</AddResult></AddResponse>
+
+2019-04-15 18:40:34 - [TEST_STEP][PASSED] - verifyElementText(response, "AddResponse.AddResult", "11"): Verify element text successfully
+
+2019-04-15 18:40:34 - [MESSAGE][PASSED] - Verify element text successfully
+
+2019-04-15 18:40:34 - [TEST_STEP][PASSED] - sendRequestAndVerify(findTestObject("SOAP/Add")): Send request and verify the response successfully
+
+2019-04-15 18:40:35 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+2019-04-15 18:40:35 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+2019-04-15 18:40:35 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+2019-04-15 18:40:35 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+2019-04-15 18:40:35 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2019-04-15 18:40:35 - [TEST_STEP][PASSED] - getStatusCode()).isEqualTo(200): null
+
+2019-04-15 18:40:36 - [TEST_STEP][PASSED] - getStatusCode()).isIn(Arrays.asList(200, 201, 202)): null
+
+2019-04-15 18:40:36 - [TEST_STEP][PASSED] - getResponseText()).contains("AddResult"): null
+
+2019-04-15 18:40:36 - [MESSAGE][PASSED] - Verify response successfully
+
+2019-04-15 18:40:36 - [MESSAGE][PASSED] - Send request and verify the response successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2019-04-15 18:40:29 - [TEST_SUITE][PASSED] - TestSuite1: Test Cases/Calculator_Add_Test]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>
