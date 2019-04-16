@@ -9,4 +9,9 @@
       <initValue>'AL'</initValue>
       <name>ISOCode</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>firstName</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

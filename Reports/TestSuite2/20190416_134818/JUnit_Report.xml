@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="TestSuite2" time="9" tests="2" failures="0" errors="0">
+   <testsuite name="TestSuite2" tests="2" failures="0" errors="0" time="9" timestamp="2019-04-16 13:48:26" hostname="User - DESKTOP-EIUQFPA" id="Test Suites/TestSuite2">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="M:\\KatalonStudio\\SimpleRESTTest\\Reports\\TestSuite2\\20190416_134818"/>
+         <property name="logFiles" value="M:\\KatalonStudio\\SimpleRESTTest\\Reports\\TestSuite2\\20190416_134818\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="User - DESKTOP-EIUQFPA"/>
+         <property name="hostAddress" value="192.168.91.1"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="6.1.1.1"/>
+      </properties>
+      <testcase name="Test Cases/CapitalCityByISOCodeFindTest" classname="Test Cases/CapitalCityByISOCodeFindTest" status="PASSED">
+         <system-out><![CDATA[2019-04-16 13:48:26 - [TEST_CASE][PASSED] - Test Cases/CapitalCityByISOCodeFindTest: Test Cases/CapitalCityByISOCodeFindTest
+
+2019-04-16 13:48:27 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("CountryList/List_Of_Countries")): Send request successfully
+
+2019-04-16 13:48:30 - [MESSAGE][INFO] - HAR: M:\KatalonStudio\SimpleRESTTest\Reports\TestSuite2\20190416_134818\requests\main\0.har
+
+2019-04-16 13:48:30 - [MESSAGE][PASSED] - Send request successfully
+
+2019-04-16 13:48:30 - [TEST_STEP][PASSED] - respondedXml = responseBodyContent: null
+
+2019-04-16 13:48:31 - [TEST_STEP][PASSED] - dataValue = XmlSlurper().parseText(respondedXml): null
+
+2019-04-16 13:48:31 - [TEST_STEP][PASSED] - for ([i = 0, i < 2, (i++)]): Verify element text successfully
+
+2019-04-16 13:48:31 - [TEST_STEP][PASSED] - ISOCode = sISOCode.text(): null
+
+2019-04-16 13:48:31 - [TEST_STEP][PASSED] - response1 = sendRequest(findTestObject("CountryList/CountryCapital")): Send request successfully
+
+2019-04-16 13:48:32 - [MESSAGE][INFO] - HAR: M:\KatalonStudio\SimpleRESTTest\Reports\TestSuite2\20190416_134818\requests\main\1.har
+
+2019-04-16 13:48:32 - [MESSAGE][PASSED] - Send request successfully
+
+2019-04-16 13:48:32 - [TEST_STEP][PASSED] - verifyElementText(response1, "CapitalCityResponse.CapitalCityResult", expectedReturnValues[i]): Verify element text successfully
+
+2019-04-16 13:48:32 - [MESSAGE][PASSED] - Verify element text successfully
+
+2019-04-16 13:48:32 - [TEST_STEP][PASSED] - ISOCode = sISOCode.text(): null
+
+2019-04-16 13:48:32 - [TEST_STEP][PASSED] - response1 = sendRequest(findTestObject("CountryList/CountryCapital")): Send request successfully
+
+2019-04-16 13:48:33 - [MESSAGE][INFO] - HAR: M:\KatalonStudio\SimpleRESTTest\Reports\TestSuite2\20190416_134818\requests\main\2.har
+
+2019-04-16 13:48:33 - [MESSAGE][PASSED] - Send request successfully
+
+2019-04-16 13:48:33 - [TEST_STEP][PASSED] - verifyElementText(response1, "CapitalCityResponse.CapitalCityResult", expectedReturnValues[i]): Verify element text successfully
+
+2019-04-16 13:48:33 - [MESSAGE][PASSED] - Verify element text successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/RestApiTest" classname="Test Cases/RestApiTest" status="PASSED">
+         <system-out><![CDATA[2019-04-16 13:48:33 - [TEST_CASE][PASSED] - Test Cases/RestApiTest: Test Cases/RestApiTest
+
+2019-04-16 13:48:33 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("UserRestService/UsersList")): Send request successfully
+
+2019-04-16 13:48:34 - [MESSAGE][INFO] - HAR: M:\KatalonStudio\SimpleRESTTest\Reports\TestSuite2\20190416_134818\requests\main\3.har
+
+2019-04-16 13:48:34 - [MESSAGE][PASSED] - Send request successfully
+
+2019-04-16 13:48:34 - [TEST_STEP][PASSED] - firstName = first_name: null
+
+2019-04-16 13:48:34 - [TEST_STEP][PASSED] - response1 = sendRequest(findTestObject("UserRestService/UpdateUser")): Send request successfully
+
+2019-04-16 13:48:35 - [MESSAGE][INFO] - HAR: M:\KatalonStudio\SimpleRESTTest\Reports\TestSuite2\20190416_134818\requests\main\4.har
+
+2019-04-16 13:48:35 - [MESSAGE][PASSED] - Send request successfully
+
+2019-04-16 13:48:35 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response1, "name", firstName): Verify element property value successfully
+
+2019-04-16 13:48:35 - [MESSAGE][PASSED] - Verify element property value successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2019-04-16 13:48:26 - [TEST_SUITE][PASSED] - TestSuite2: Test Cases/RestApiTest]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

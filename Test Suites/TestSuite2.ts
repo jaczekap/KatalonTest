@@ -15,5 +15,17 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/CapitalCityByISOCodeFindTest</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>d7b4ee2b-d81f-4a1b-a545-75831f105ff7</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>1e24cd31-ab22-419e-a265-321674a4e302</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/RestApiTest</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>

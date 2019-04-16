@@ -1,0 +1,14 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+TestSuite2,,,2019-04-16 13:48:26,2019-04-16 13:48:35,"9,216s",PASSED
+,,,,,,
+Test Cases/CapitalCityByISOCodeFindTest,,,2019-04-16 13:48:26,2019-04-16 13:48:33,"6,637s",PASSED
+"response = sendRequest(findTestObject(""CountryList/List_Of_Countries""))",,,2019-04-16 13:48:27,2019-04-16 13:48:30,"3,501s",PASSED
+respondedXml = responseBodyContent,,,2019-04-16 13:48:30,2019-04-16 13:48:31,"0,485s",PASSED
+dataValue = XmlSlurper().parseText(respondedXml),,,2019-04-16 13:48:31,2019-04-16 13:48:31,"0,065s",PASSED
+"for ([i = 0, i < 2, (i++)])",,,2019-04-16 13:48:31,2019-04-16 13:48:33,"1,712s",PASSED
+,,,,,,
+Test Cases/RestApiTest,,,2019-04-16 13:48:33,2019-04-16 13:48:35,"2,068s",PASSED
+"response = sendRequest(findTestObject(""UserRestService/UsersList""))",,,2019-04-16 13:48:33,2019-04-16 13:48:34,"1,260s",PASSED
+firstName = first_name,,,2019-04-16 13:48:34,2019-04-16 13:48:34,"0,027s",PASSED
+"response1 = sendRequest(findTestObject(""UserRestService/UpdateUser""))",,,2019-04-16 13:48:34,2019-04-16 13:48:35,"0,565s",PASSED
+"verifyElementPropertyValue(response1, ""name"", firstName)",,,2019-04-16 13:48:35,2019-04-16 13:48:35,"0,028s",PASSED
