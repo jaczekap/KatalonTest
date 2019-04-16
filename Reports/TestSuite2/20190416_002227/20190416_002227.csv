@@ -1,0 +1,13 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+TestSuite2,,,2019-04-16 00:22:35,2019-04-16 00:22:42,"7,316s",PASSED
+,,,,,,
+Test Cases/CapitalCityByISOCodeFindTest,,,2019-04-16 00:22:36,2019-04-16 00:22:42,"6,672s",PASSED
+"response = sendRequest(findTestObject(""CountryList/List_Of_Countries""))",,,2019-04-16 00:22:36,2019-04-16 00:22:40,"3,564s",PASSED
+respondedXml = responseBodyContent,,,2019-04-16 00:22:40,2019-04-16 00:22:40,"0,445s",PASSED
+dataValue = XmlSlurper().parseText(respondedXml),,,2019-04-16 00:22:40,2019-04-16 00:22:40,"0,069s",PASSED
+codesReturned = [],,,2019-04-16 00:22:40,2019-04-16 00:22:40,"0,002s",PASSED
+capitalsCityTestData = [],,,2019-04-16 00:22:40,2019-04-16 00:22:40,"0,001s",PASSED
+"capitalsCityTestData[0] = ""Kabul""",,,2019-04-16 00:22:40,2019-04-16 00:22:40,"0,002s",PASSED
+"capitalsCityTestData[1] = ""Tirana""",,,2019-04-16 00:22:40,2019-04-16 00:22:40,"0,001s",PASSED
+"for ([i = 1, i < 3, (i++)])",,,2019-04-16 00:22:40,2019-04-16 00:22:41,"0,071s",PASSED
+"for ([i = 0, i < 2, (i++)])",,,2019-04-16 00:22:41,2019-04-16 00:22:42,"1,711s",PASSED

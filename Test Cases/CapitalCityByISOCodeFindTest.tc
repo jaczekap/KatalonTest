@@ -5,4 +5,11 @@
    <tag></tag>
    <comment></comment>
    <testCaseGuid>1a90efba-a317-42f0-933d-e0907d1e92fb</testCaseGuid>
+   <variable>
+      <defaultValue>['Kabul', 'Tirana']</defaultValue>
+      <description></description>
+      <id>d7b4ee2b-d81f-4a1b-a545-75831f105ff7</id>
+      <masked>false</masked>
+      <name>expectedReturnValues</name>
+   </variable>
 </TestCaseEntity>

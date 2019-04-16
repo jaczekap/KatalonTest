@@ -20,22 +20,10 @@ String respondedXml = response.responseBodyContent
 
 def dataValue = new XmlSlurper().parseText(respondedXml)
 
-String[] codesReturned = new String[2]
-
-String[] capitalsCityTestData = new String[2]
-
-(capitalsCityTestData[0]) = 'Kabul'
-
-(capitalsCityTestData[1]) = 'Tirana'
-
 for (int i = 0; i < 2; i++) {
-    (codesReturned[i]) = dataValue.ListOfCountryNamesByNameResult.tCountryCodeAndName[(i + 1)].sISOCode.text()
-}
-
-for (int i = 0; i < 2; i++) {
-    GlobalVariable.ISOCode = (codesReturned[i])
+    GlobalVariable.ISOCode = dataValue.ListOfCountryNamesByNameResult.tCountryCodeAndName[(i + 1)].sISOCode.text()
 
     response1 = WS.sendRequest(findTestObject('CountryList/CountryCapital'))
 
-    WS.verifyElementText(response1, 'CapitalCityResponse.CapitalCityResult', capitalsCityTestData[i])
+    WS.verifyElementText(response1, 'CapitalCityResponse.CapitalCityResult', expectedReturnValues[i])
 }
