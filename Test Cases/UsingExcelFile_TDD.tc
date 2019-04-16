@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>UsingExcelFile_TDD</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>c5f5bdb8-f2b4-47d5-824f-3674e57050a5</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>ffc9b2f8-fe35-4200-a84e-dd47d831fd96</id>
+      <masked>false</masked>
+      <name>isoCode</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>9171ed62-d889-44fb-b0d2-312a85288de2</id>
+      <masked>false</masked>
+      <name>currency1</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>04a37f49-b18b-438b-ad39-7d73011427e1</id>
+      <masked>false</masked>
+      <name>capital</name>
+   </variable>
+</TestCaseEntity>

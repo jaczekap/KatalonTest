@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="DDT_TestSuite" time="10" tests="5" failures="0" errors="0">
+   <testsuite name="DDT_TestSuite" tests="5" failures="0" errors="0" time="10" timestamp="2019-04-16 19:52:10" hostname="User - DESKTOP-EIUQFPA" id="Test Suites/DDT_TestSuite">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="M:\\KatalonStudio\\SimpleRESTTest\\Reports\\DDT_TestSuite\\20190416_195203"/>
+         <property name="logFiles" value="M:\\KatalonStudio\\SimpleRESTTest\\Reports\\DDT_TestSuite\\20190416_195203\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="User - DESKTOP-EIUQFPA"/>
+         <property name="hostAddress" value="192.168.91.1"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="6.1.1.1"/>
+      </properties>
+      <testcase name="Test Cases/UsingExcelFile_TDD" classname="Test Cases/UsingExcelFile_TDD" status="PASSED">
+         <system-out><![CDATA[2019-04-16 19:52:11 - [TEST_CASE][PASSED] - Test Cases/UsingExcelFile_TDD: Test Cases/UsingExcelFile_TDD
+
+2019-04-16 19:52:11 - [TEST_STEP][PASSED] - response1 = sendRequest(findTestObject("CountryList/Currency", ["isoCode":isoCode])): Send request successfully
+
+2019-04-16 19:52:14 - [MESSAGE][INFO] - HAR: M:\KatalonStudio\SimpleRESTTest\Reports\DDT_TestSuite\20190416_195203\requests\main\0.har
+
+2019-04-16 19:52:14 - [MESSAGE][PASSED] - Send request successfully
+
+2019-04-16 19:52:14 - [TEST_STEP][PASSED] - response2 = sendRequest(findTestObject("CountryList/CountryCapital", ["isoCode":isoCode])): Send request successfully
+
+2019-04-16 19:52:15 - [MESSAGE][INFO] - HAR: M:\KatalonStudio\SimpleRESTTest\Reports\DDT_TestSuite\20190416_195203\requests\main\1.har
+
+2019-04-16 19:52:15 - [MESSAGE][PASSED] - Send request successfully
+
+2019-04-16 19:52:15 - [TEST_STEP][PASSED] - verifyElementText(response1, "CountryCurrencyResponse.CountryCurrencyResult.sName", currency1): Verify element text successfully
+
+2019-04-16 19:52:15 - [MESSAGE][PASSED] - Verify element text successfully
+
+2019-04-16 19:52:15 - [TEST_STEP][PASSED] - verifyElementText(response2, "CapitalCityResponse.CapitalCityResult", capital): Verify element text successfully
+
+2019-04-16 19:52:15 - [MESSAGE][PASSED] - Verify element text successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/UsingExcelFile_TDD" classname="Test Cases/UsingExcelFile_TDD" status="PASSED">
+         <system-out><![CDATA[2019-04-16 19:52:15 - [TEST_CASE][PASSED] - Test Cases/UsingExcelFile_TDD: Test Cases/UsingExcelFile_TDD
+
+2019-04-16 19:52:16 - [TEST_STEP][PASSED] - response1 = sendRequest(findTestObject("CountryList/Currency", ["isoCode":isoCode])): Send request successfully
+
+2019-04-16 19:52:16 - [MESSAGE][INFO] - HAR: M:\KatalonStudio\SimpleRESTTest\Reports\DDT_TestSuite\20190416_195203\requests\main\2.har
+
+2019-04-16 19:52:16 - [MESSAGE][PASSED] - Send request successfully
+
+2019-04-16 19:52:16 - [TEST_STEP][PASSED] - response2 = sendRequest(findTestObject("CountryList/CountryCapital", ["isoCode":isoCode])): Send request successfully
+
+2019-04-16 19:52:17 - [MESSAGE][INFO] - HAR: M:\KatalonStudio\SimpleRESTTest\Reports\DDT_TestSuite\20190416_195203\requests\main\3.har
+
+2019-04-16 19:52:17 - [MESSAGE][PASSED] - Send request successfully
+
+2019-04-16 19:52:17 - [TEST_STEP][PASSED] - verifyElementText(response1, "CountryCurrencyResponse.CountryCurrencyResult.sName", currency1): Verify element text successfully
+
+2019-04-16 19:52:17 - [MESSAGE][PASSED] - Verify element text successfully
+
+2019-04-16 19:52:17 - [TEST_STEP][PASSED] - verifyElementText(response2, "CapitalCityResponse.CapitalCityResult", capital): Verify element text successfully
+
+2019-04-16 19:52:17 - [MESSAGE][PASSED] - Verify element text successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/UsingExcelFile_TDD" classname="Test Cases/UsingExcelFile_TDD" status="PASSED">
+         <system-out><![CDATA[2019-04-16 19:52:17 - [TEST_CASE][PASSED] - Test Cases/UsingExcelFile_TDD: Test Cases/UsingExcelFile_TDD
+
+2019-04-16 19:52:17 - [TEST_STEP][PASSED] - response1 = sendRequest(findTestObject("CountryList/Currency", ["isoCode":isoCode])): Send request successfully
+
+2019-04-16 19:52:17 - [MESSAGE][INFO] - HAR: M:\KatalonStudio\SimpleRESTTest\Reports\DDT_TestSuite\20190416_195203\requests\main\4.har
+
+2019-04-16 19:52:17 - [MESSAGE][PASSED] - Send request successfully
+
+2019-04-16 19:52:17 - [TEST_STEP][PASSED] - response2 = sendRequest(findTestObject("CountryList/CountryCapital", ["isoCode":isoCode])): Send request successfully
+
+2019-04-16 19:52:18 - [MESSAGE][INFO] - HAR: M:\KatalonStudio\SimpleRESTTest\Reports\DDT_TestSuite\20190416_195203\requests\main\5.har
+
+2019-04-16 19:52:18 - [MESSAGE][PASSED] - Send request successfully
+
+2019-04-16 19:52:18 - [TEST_STEP][PASSED] - verifyElementText(response1, "CountryCurrencyResponse.CountryCurrencyResult.sName", currency1): Verify element text successfully
+
+2019-04-16 19:52:18 - [MESSAGE][PASSED] - Verify element text successfully
+
+2019-04-16 19:52:18 - [TEST_STEP][PASSED] - verifyElementText(response2, "CapitalCityResponse.CapitalCityResult", capital): Verify element text successfully
+
+2019-04-16 19:52:18 - [MESSAGE][PASSED] - Verify element text successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/UsingExcelFile_TDD" classname="Test Cases/UsingExcelFile_TDD" status="PASSED">
+         <system-out><![CDATA[2019-04-16 19:52:18 - [TEST_CASE][PASSED] - Test Cases/UsingExcelFile_TDD: Test Cases/UsingExcelFile_TDD
+
+2019-04-16 19:52:18 - [TEST_STEP][PASSED] - response1 = sendRequest(findTestObject("CountryList/Currency", ["isoCode":isoCode])): Send request successfully
+
+2019-04-16 19:52:19 - [MESSAGE][INFO] - HAR: M:\KatalonStudio\SimpleRESTTest\Reports\DDT_TestSuite\20190416_195203\requests\main\6.har
+
+2019-04-16 19:52:19 - [MESSAGE][PASSED] - Send request successfully
+
+2019-04-16 19:52:19 - [TEST_STEP][PASSED] - response2 = sendRequest(findTestObject("CountryList/CountryCapital", ["isoCode":isoCode])): Send request successfully
+
+2019-04-16 19:52:19 - [MESSAGE][INFO] - HAR: M:\KatalonStudio\SimpleRESTTest\Reports\DDT_TestSuite\20190416_195203\requests\main\7.har
+
+2019-04-16 19:52:19 - [MESSAGE][PASSED] - Send request successfully
+
+2019-04-16 19:52:20 - [TEST_STEP][PASSED] - verifyElementText(response1, "CountryCurrencyResponse.CountryCurrencyResult.sName", currency1): Verify element text successfully
+
+2019-04-16 19:52:20 - [MESSAGE][PASSED] - Verify element text successfully
+
+2019-04-16 19:52:20 - [TEST_STEP][PASSED] - verifyElementText(response2, "CapitalCityResponse.CapitalCityResult", capital): Verify element text successfully
+
+2019-04-16 19:52:20 - [MESSAGE][PASSED] - Verify element text successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/UsingExcelFile_TDD" classname="Test Cases/UsingExcelFile_TDD" status="PASSED">
+         <system-out><![CDATA[2019-04-16 19:52:20 - [TEST_CASE][PASSED] - Test Cases/UsingExcelFile_TDD: Test Cases/UsingExcelFile_TDD
+
+2019-04-16 19:52:20 - [TEST_STEP][PASSED] - response1 = sendRequest(findTestObject("CountryList/Currency", ["isoCode":isoCode])): Send request successfully
+
+2019-04-16 19:52:20 - [MESSAGE][INFO] - HAR: M:\KatalonStudio\SimpleRESTTest\Reports\DDT_TestSuite\20190416_195203\requests\main\8.har
+
+2019-04-16 19:52:20 - [MESSAGE][PASSED] - Send request successfully
+
+2019-04-16 19:52:20 - [TEST_STEP][PASSED] - response2 = sendRequest(findTestObject("CountryList/CountryCapital", ["isoCode":isoCode])): Send request successfully
+
+2019-04-16 19:52:21 - [MESSAGE][INFO] - HAR: M:\KatalonStudio\SimpleRESTTest\Reports\DDT_TestSuite\20190416_195203\requests\main\9.har
+
+2019-04-16 19:52:21 - [MESSAGE][PASSED] - Send request successfully
+
+2019-04-16 19:52:21 - [TEST_STEP][PASSED] - verifyElementText(response1, "CountryCurrencyResponse.CountryCurrencyResult.sName", currency1): Verify element text successfully
+
+2019-04-16 19:52:21 - [MESSAGE][PASSED] - Verify element text successfully
+
+2019-04-16 19:52:21 - [TEST_STEP][PASSED] - verifyElementText(response2, "CapitalCityResponse.CapitalCityResult", capital): Verify element text successfully
+
+2019-04-16 19:52:21 - [MESSAGE][PASSED] - Verify element text successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2019-04-16 19:52:10 - [TEST_SUITE][PASSED] - DDT_TestSuite: Test Cases/UsingExcelFile_TDD]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

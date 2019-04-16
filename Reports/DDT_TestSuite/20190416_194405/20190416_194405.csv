@@ -1,0 +1,28 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+DDT_TestSuite,,,2019-04-16 19:44:12,2019-04-16 19:44:23,"11,136s",FAILED
+,,,,,,
+Test Cases/UsingExcelFile_TDD,,,2019-04-16 19:44:13,2019-04-16 19:44:18,"5,377s",FAILED
+"response1 = sendRequest(findTestObject(""CountryList/Currency"", [""ISOCode"":isoCode]))",,,2019-04-16 19:44:13,2019-04-16 19:44:17,"3,667s",PASSED
+"response2 = sendRequest(findTestObject(""CountryList/CountryCapital"", [""ISOCode"":isoCode]))",,,2019-04-16 19:44:17,2019-04-16 19:44:18,"0,722s",PASSED
+"verifyElementText(response1, ""CountryCurrencyResponse.CountryCurrencyResult.sName"", currency1)",,,2019-04-16 19:44:18,2019-04-16 19:44:18,"0,493s",FAILED
+,,,,,,
+Test Cases/UsingExcelFile_TDD,,,2019-04-16 19:44:18,2019-04-16 19:44:20,"1,442s",FAILED
+"response1 = sendRequest(findTestObject(""CountryList/Currency"", [""ISOCode"":isoCode]))",,,2019-04-16 19:44:18,2019-04-16 19:44:19,"0,605s",PASSED
+"response2 = sendRequest(findTestObject(""CountryList/CountryCapital"", [""ISOCode"":isoCode]))",,,2019-04-16 19:44:19,2019-04-16 19:44:19,"0,687s",PASSED
+"verifyElementText(response1, ""CountryCurrencyResponse.CountryCurrencyResult.sName"", currency1)",,,2019-04-16 19:44:19,2019-04-16 19:44:20,"0,050s",FAILED
+,,,,,,
+Test Cases/UsingExcelFile_TDD,,,2019-04-16 19:44:20,2019-04-16 19:44:21,"1,215s",FAILED
+"response1 = sendRequest(findTestObject(""CountryList/Currency"", [""ISOCode"":isoCode]))",,,2019-04-16 19:44:20,2019-04-16 19:44:20,"0,554s",PASSED
+"response2 = sendRequest(findTestObject(""CountryList/CountryCapital"", [""ISOCode"":isoCode]))",,,2019-04-16 19:44:20,2019-04-16 19:44:21,"0,606s",PASSED
+"verifyElementText(response1, ""CountryCurrencyResponse.CountryCurrencyResult.sName"", currency1)",,,2019-04-16 19:44:21,2019-04-16 19:44:21,"0,038s",FAILED
+,,,,,,
+Test Cases/UsingExcelFile_TDD,,,2019-04-16 19:44:21,2019-04-16 19:44:22,"1,227s",FAILED
+"response1 = sendRequest(findTestObject(""CountryList/Currency"", [""ISOCode"":isoCode]))",,,2019-04-16 19:44:21,2019-04-16 19:44:21,"0,549s",PASSED
+"response2 = sendRequest(findTestObject(""CountryList/CountryCapital"", [""ISOCode"":isoCode]))",,,2019-04-16 19:44:21,2019-04-16 19:44:22,"0,617s",PASSED
+"verifyElementText(response1, ""CountryCurrencyResponse.CountryCurrencyResult.sName"", currency1)",,,2019-04-16 19:44:22,2019-04-16 19:44:22,"0,037s",FAILED
+,,,,,,
+Test Cases/UsingExcelFile_TDD,,,2019-04-16 19:44:22,2019-04-16 19:44:23,"1,322s",ERROR
+"response1 = sendRequest(findTestObject(""CountryList/Currency"", [""ISOCode"":isoCode]))",,,2019-04-16 19:44:22,2019-04-16 19:44:23,"0,561s",PASSED
+"response2 = sendRequest(findTestObject(""CountryList/CountryCapital"", [""ISOCode"":isoCode]))",,,2019-04-16 19:44:23,2019-04-16 19:44:23,"0,699s",PASSED
+"verifyElementText(response1, ""CountryCurrencyResponse.CountryCurrencyResult.sName"", currency1)",,,2019-04-16 19:44:23,2019-04-16 19:44:23,"0,041s",PASSED
+"verifyElementText(response, ""CapitalCityResponse.CapitalCityResult"", capital)",,,2019-04-16 19:44:23,2019-04-16 19:44:23,"0,006s",ERROR

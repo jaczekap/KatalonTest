@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>CountryCapital</name>
+   <name>Currency</name>
    <tag></tag>
-   <elementGuidId>1871c7f3-ce8f-47e1-b20e-4a8e189945ad</elementGuidId>
+   <elementGuidId>724edaa2-228b-4f1e-a848-dfe2732c93d8</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <httpBody></httpBody>
@@ -14,14 +14,14 @@
    <serviceType>SOAP</serviceType>
    <soapBody>&lt;Envelope xmlns=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot;>
     &lt;Body>
-        &lt;CapitalCity xmlns=&quot;http://www.oorsprong.org/websamples.countryinfo&quot;>
+        &lt;CountryCurrency xmlns=&quot;http://www.oorsprong.org/websamples.countryinfo&quot;>
             &lt;sCountryISOCode>${isoCode}&lt;/sCountryISOCode>
-        &lt;/CapitalCity>
+        &lt;/CountryCurrency>
     &lt;/Body>
 &lt;/Envelope></soapBody>
    <soapHeader></soapHeader>
    <soapRequestMethod>SOAP</soapRequestMethod>
-   <soapServiceFunction>CapitalCity</soapServiceFunction>
+   <soapServiceFunction>CountryCurrency</soapServiceFunction>
    <variables>
       <defaultValue>GlobalVariable.ISOCode</defaultValue>
       <description></description>
@@ -42,6 +42,9 @@ import internal.GlobalVariable as GlobalVariable
 RequestObject request = WSResponseManager.getInstance().getCurrentRequest()
 
 ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()
-</verificationScript>
+
+
+
+WS.verifyElementText(response, 'CountryCurrencyResponse.CountryCurrencyResult.sName', 'Leke')</verificationScript>
    <wsdlAddress>http://webservices.oorsprong.org/websamples.countryinfo/CountryInfoService.wso?WSDL</wsdlAddress>
 </WebServiceRequestEntity>

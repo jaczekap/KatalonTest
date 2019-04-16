@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestSuiteEntity>
+   <description></description>
+   <name>DDT_TestSuite</name>
+   <tag></tag>
+   <isRerun>false</isRerun>
+   <mailRecipient></mailRecipient>
+   <numberOfRerun>0</numberOfRerun>
+   <pageLoadTimeout>30</pageLoadTimeout>
+   <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
+   <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
+   <testSuiteGuid>fe8d31c9-6b00-40f9-9953-9cdca68e34b0</testSuiteGuid>
+   <testCaseLink>
+      <guid>087b1bb3-02db-4be7-9115-abcae3fa7dbd</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/UsingExcelFile_TDD</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>cb2f648c-22e0-4b01-8bcd-825232f5f20d</id>
+         <iterationEntity>
+            <iterationType>ALL</iterationType>
+            <value></value>
+         </iterationEntity>
+         <testDataId>Data Files/TestData_Countries_Service</testDataId>
+      </testDataLink>
+      <variableLink>
+         <testDataLinkId>cb2f648c-22e0-4b01-8bcd-825232f5f20d</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>isoCode</value>
+         <variableId>ffc9b2f8-fe35-4200-a84e-dd47d831fd96</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>cb2f648c-22e0-4b01-8bcd-825232f5f20d</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>currency1</value>
+         <variableId>9171ed62-d889-44fb-b0d2-312a85288de2</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>cb2f648c-22e0-4b01-8bcd-825232f5f20d</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>capital</value>
+         <variableId>04a37f49-b18b-438b-ad39-7d73011427e1</variableId>
+      </variableLink>
+   </testCaseLink>
+</TestSuiteEntity>

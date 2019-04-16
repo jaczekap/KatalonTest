@@ -1,0 +1,590 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="DDT_TestSuite" time="10" tests="0" failures="0" errors="5">
+   <testsuite name="DDT_TestSuite" tests="0" failures="0" errors="5" time="10" timestamp="2019-04-16 19:51:02" hostname="User - DESKTOP-EIUQFPA" id="Test Suites/DDT_TestSuite">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="M:\\KatalonStudio\\SimpleRESTTest\\Reports\\DDT_TestSuite\\20190416_195055"/>
+         <property name="logFiles" value="M:\\KatalonStudio\\SimpleRESTTest\\Reports\\DDT_TestSuite\\20190416_195055\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="User - DESKTOP-EIUQFPA"/>
+         <property name="hostAddress" value="192.168.91.1"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="6.1.1.1"/>
+      </properties>
+      <testcase name="Test Cases/UsingExcelFile_TDD" classname="Test Cases/UsingExcelFile_TDD" status="ERROR">
+         <error type="ERROR" message="Test Cases/UsingExcelFile_TDD FAILED.
+Reason:
+groovy.lang.MissingPropertyException: No such property: response for class: Script1555432717688
+	at UsingExcelFile_TDD.run(UsingExcelFile_TDD:22)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1555437060040.run(TempTestSuite1555437060040.groovy:35)
+"/>
+         <system-out><![CDATA[2019-04-16 19:51:03 - [TEST_CASE][ERROR] - Test Cases/UsingExcelFile_TDD: Test Cases/UsingExcelFile_TDD FAILED.
+Reason:
+groovy.lang.MissingPropertyException: No such property: response for class: Script1555432717688
+	at UsingExcelFile_TDD.run(UsingExcelFile_TDD:22)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1555437060040.run(TempTestSuite1555437060040.groovy:35)
+
+
+2019-04-16 19:51:03 - [TEST_STEP][PASSED] - response1 = sendRequest(findTestObject("CountryList/Currency", ["isoCode":isoCode])): Send request successfully
+
+2019-04-16 19:51:06 - [MESSAGE][INFO] - HAR: M:\KatalonStudio\SimpleRESTTest\Reports\DDT_TestSuite\20190416_195055\requests\main\0.har
+
+2019-04-16 19:51:06 - [MESSAGE][PASSED] - Send request successfully
+
+2019-04-16 19:51:06 - [TEST_STEP][PASSED] - response2 = sendRequest(findTestObject("CountryList/CountryCapital", ["isoCode":isoCode])): Send request successfully
+
+2019-04-16 19:51:07 - [MESSAGE][INFO] - HAR: M:\KatalonStudio\SimpleRESTTest\Reports\DDT_TestSuite\20190416_195055\requests\main\1.har
+
+2019-04-16 19:51:07 - [MESSAGE][PASSED] - Send request successfully
+
+2019-04-16 19:51:07 - [TEST_STEP][PASSED] - verifyElementText(response1, "CountryCurrencyResponse.CountryCurrencyResult.sName", currency1): Verify element text successfully
+
+2019-04-16 19:51:07 - [MESSAGE][PASSED] - Verify element text successfully
+
+2019-04-16 19:51:07 - [TEST_STEP][ERROR] - verifyElementText(response, "CapitalCityResponse.CapitalCityResult", capital): verifyElementText(response, "CapitalCityResponse.CapitalCityResult", capital) FAILED.
+Reason:
+groovy.lang.MissingPropertyException: No such property: response for class: Script1555432717688
+	at UsingExcelFile_TDD.run(UsingExcelFile_TDD:22)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1555437060040.run(TempTestSuite1555437060040.groovy:35)
+
+
+2019-04-16 19:51:08 - [MESSAGE][ERROR] - verifyElementText(response, "CapitalCityResponse.CapitalCityResult", capital) FAILED.
+Reason:
+groovy.lang.MissingPropertyException: No such property: response for class: Script1555432717688
+	at UsingExcelFile_TDD.run(UsingExcelFile_TDD:22)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1555437060040.run(TempTestSuite1555437060040.groovy:35)]]></system-out>
+         <system-err><![CDATA[2019-04-16 19:51:03 - [TEST_CASE][ERROR] - Test Cases/UsingExcelFile_TDD: Test Cases/UsingExcelFile_TDD FAILED.
+Reason:
+groovy.lang.MissingPropertyException: No such property: response for class: Script1555432717688
+	at UsingExcelFile_TDD.run(UsingExcelFile_TDD:22)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1555437060040.run(TempTestSuite1555437060040.groovy:35)]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/UsingExcelFile_TDD" classname="Test Cases/UsingExcelFile_TDD" status="ERROR">
+         <error type="ERROR" message="Test Cases/UsingExcelFile_TDD FAILED.
+Reason:
+groovy.lang.MissingPropertyException: No such property: response for class: Script1555432717688
+	at UsingExcelFile_TDD.run(UsingExcelFile_TDD:22)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1555437060040.run(TempTestSuite1555437060040.groovy:35)
+"/>
+         <system-out><![CDATA[2019-04-16 19:51:08 - [TEST_CASE][ERROR] - Test Cases/UsingExcelFile_TDD: Test Cases/UsingExcelFile_TDD FAILED.
+Reason:
+groovy.lang.MissingPropertyException: No such property: response for class: Script1555432717688
+	at UsingExcelFile_TDD.run(UsingExcelFile_TDD:22)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1555437060040.run(TempTestSuite1555437060040.groovy:35)
+
+
+2019-04-16 19:51:08 - [TEST_STEP][PASSED] - response1 = sendRequest(findTestObject("CountryList/Currency", ["isoCode":isoCode])): Send request successfully
+
+2019-04-16 19:51:08 - [MESSAGE][INFO] - HAR: M:\KatalonStudio\SimpleRESTTest\Reports\DDT_TestSuite\20190416_195055\requests\main\2.har
+
+2019-04-16 19:51:08 - [MESSAGE][PASSED] - Send request successfully
+
+2019-04-16 19:51:08 - [TEST_STEP][PASSED] - response2 = sendRequest(findTestObject("CountryList/CountryCapital", ["isoCode":isoCode])): Send request successfully
+
+2019-04-16 19:51:09 - [MESSAGE][INFO] - HAR: M:\KatalonStudio\SimpleRESTTest\Reports\DDT_TestSuite\20190416_195055\requests\main\3.har
+
+2019-04-16 19:51:09 - [MESSAGE][PASSED] - Send request successfully
+
+2019-04-16 19:51:09 - [TEST_STEP][PASSED] - verifyElementText(response1, "CountryCurrencyResponse.CountryCurrencyResult.sName", currency1): Verify element text successfully
+
+2019-04-16 19:51:09 - [MESSAGE][PASSED] - Verify element text successfully
+
+2019-04-16 19:51:09 - [TEST_STEP][ERROR] - verifyElementText(response, "CapitalCityResponse.CapitalCityResult", capital): verifyElementText(response, "CapitalCityResponse.CapitalCityResult", capital) FAILED.
+Reason:
+groovy.lang.MissingPropertyException: No such property: response for class: Script1555432717688
+	at UsingExcelFile_TDD.run(UsingExcelFile_TDD:22)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1555437060040.run(TempTestSuite1555437060040.groovy:35)
+
+
+2019-04-16 19:51:09 - [MESSAGE][ERROR] - verifyElementText(response, "CapitalCityResponse.CapitalCityResult", capital) FAILED.
+Reason:
+groovy.lang.MissingPropertyException: No such property: response for class: Script1555432717688
+	at UsingExcelFile_TDD.run(UsingExcelFile_TDD:22)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1555437060040.run(TempTestSuite1555437060040.groovy:35)]]></system-out>
+         <system-err><![CDATA[2019-04-16 19:51:08 - [TEST_CASE][ERROR] - Test Cases/UsingExcelFile_TDD: Test Cases/UsingExcelFile_TDD FAILED.
+Reason:
+groovy.lang.MissingPropertyException: No such property: response for class: Script1555432717688
+	at UsingExcelFile_TDD.run(UsingExcelFile_TDD:22)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1555437060040.run(TempTestSuite1555437060040.groovy:35)]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/UsingExcelFile_TDD" classname="Test Cases/UsingExcelFile_TDD" status="ERROR">
+         <error type="ERROR" message="Test Cases/UsingExcelFile_TDD FAILED.
+Reason:
+groovy.lang.MissingPropertyException: No such property: response for class: Script1555432717688
+	at UsingExcelFile_TDD.run(UsingExcelFile_TDD:22)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1555437060040.run(TempTestSuite1555437060040.groovy:35)
+"/>
+         <system-out><![CDATA[2019-04-16 19:51:09 - [TEST_CASE][ERROR] - Test Cases/UsingExcelFile_TDD: Test Cases/UsingExcelFile_TDD FAILED.
+Reason:
+groovy.lang.MissingPropertyException: No such property: response for class: Script1555432717688
+	at UsingExcelFile_TDD.run(UsingExcelFile_TDD:22)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1555437060040.run(TempTestSuite1555437060040.groovy:35)
+
+
+2019-04-16 19:51:09 - [TEST_STEP][PASSED] - response1 = sendRequest(findTestObject("CountryList/Currency", ["isoCode":isoCode])): Send request successfully
+
+2019-04-16 19:51:09 - [MESSAGE][INFO] - HAR: M:\KatalonStudio\SimpleRESTTest\Reports\DDT_TestSuite\20190416_195055\requests\main\4.har
+
+2019-04-16 19:51:09 - [MESSAGE][PASSED] - Send request successfully
+
+2019-04-16 19:51:09 - [TEST_STEP][PASSED] - response2 = sendRequest(findTestObject("CountryList/CountryCapital", ["isoCode":isoCode])): Send request successfully
+
+2019-04-16 19:51:10 - [MESSAGE][INFO] - HAR: M:\KatalonStudio\SimpleRESTTest\Reports\DDT_TestSuite\20190416_195055\requests\main\5.har
+
+2019-04-16 19:51:10 - [MESSAGE][PASSED] - Send request successfully
+
+2019-04-16 19:51:10 - [TEST_STEP][PASSED] - verifyElementText(response1, "CountryCurrencyResponse.CountryCurrencyResult.sName", currency1): Verify element text successfully
+
+2019-04-16 19:51:10 - [MESSAGE][PASSED] - Verify element text successfully
+
+2019-04-16 19:51:10 - [TEST_STEP][ERROR] - verifyElementText(response, "CapitalCityResponse.CapitalCityResult", capital): verifyElementText(response, "CapitalCityResponse.CapitalCityResult", capital) FAILED.
+Reason:
+groovy.lang.MissingPropertyException: No such property: response for class: Script1555432717688
+	at UsingExcelFile_TDD.run(UsingExcelFile_TDD:22)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1555437060040.run(TempTestSuite1555437060040.groovy:35)
+
+
+2019-04-16 19:51:10 - [MESSAGE][ERROR] - verifyElementText(response, "CapitalCityResponse.CapitalCityResult", capital) FAILED.
+Reason:
+groovy.lang.MissingPropertyException: No such property: response for class: Script1555432717688
+	at UsingExcelFile_TDD.run(UsingExcelFile_TDD:22)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1555437060040.run(TempTestSuite1555437060040.groovy:35)]]></system-out>
+         <system-err><![CDATA[2019-04-16 19:51:09 - [TEST_CASE][ERROR] - Test Cases/UsingExcelFile_TDD: Test Cases/UsingExcelFile_TDD FAILED.
+Reason:
+groovy.lang.MissingPropertyException: No such property: response for class: Script1555432717688
+	at UsingExcelFile_TDD.run(UsingExcelFile_TDD:22)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1555437060040.run(TempTestSuite1555437060040.groovy:35)]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/UsingExcelFile_TDD" classname="Test Cases/UsingExcelFile_TDD" status="ERROR">
+         <error type="ERROR" message="Test Cases/UsingExcelFile_TDD FAILED.
+Reason:
+groovy.lang.MissingPropertyException: No such property: response for class: Script1555432717688
+	at UsingExcelFile_TDD.run(UsingExcelFile_TDD:22)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1555437060040.run(TempTestSuite1555437060040.groovy:35)
+"/>
+         <system-out><![CDATA[2019-04-16 19:51:10 - [TEST_CASE][ERROR] - Test Cases/UsingExcelFile_TDD: Test Cases/UsingExcelFile_TDD FAILED.
+Reason:
+groovy.lang.MissingPropertyException: No such property: response for class: Script1555432717688
+	at UsingExcelFile_TDD.run(UsingExcelFile_TDD:22)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1555437060040.run(TempTestSuite1555437060040.groovy:35)
+
+
+2019-04-16 19:51:10 - [TEST_STEP][PASSED] - response1 = sendRequest(findTestObject("CountryList/Currency", ["isoCode":isoCode])): Send request successfully
+
+2019-04-16 19:51:11 - [MESSAGE][INFO] - HAR: M:\KatalonStudio\SimpleRESTTest\Reports\DDT_TestSuite\20190416_195055\requests\main\6.har
+
+2019-04-16 19:51:11 - [MESSAGE][PASSED] - Send request successfully
+
+2019-04-16 19:51:11 - [TEST_STEP][PASSED] - response2 = sendRequest(findTestObject("CountryList/CountryCapital", ["isoCode":isoCode])): Send request successfully
+
+2019-04-16 19:51:11 - [MESSAGE][INFO] - HAR: M:\KatalonStudio\SimpleRESTTest\Reports\DDT_TestSuite\20190416_195055\requests\main\7.har
+
+2019-04-16 19:51:11 - [MESSAGE][PASSED] - Send request successfully
+
+2019-04-16 19:51:11 - [TEST_STEP][PASSED] - verifyElementText(response1, "CountryCurrencyResponse.CountryCurrencyResult.sName", currency1): Verify element text successfully
+
+2019-04-16 19:51:11 - [MESSAGE][PASSED] - Verify element text successfully
+
+2019-04-16 19:51:11 - [TEST_STEP][ERROR] - verifyElementText(response, "CapitalCityResponse.CapitalCityResult", capital): verifyElementText(response, "CapitalCityResponse.CapitalCityResult", capital) FAILED.
+Reason:
+groovy.lang.MissingPropertyException: No such property: response for class: Script1555432717688
+	at UsingExcelFile_TDD.run(UsingExcelFile_TDD:22)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1555437060040.run(TempTestSuite1555437060040.groovy:35)
+
+
+2019-04-16 19:51:11 - [MESSAGE][ERROR] - verifyElementText(response, "CapitalCityResponse.CapitalCityResult", capital) FAILED.
+Reason:
+groovy.lang.MissingPropertyException: No such property: response for class: Script1555432717688
+	at UsingExcelFile_TDD.run(UsingExcelFile_TDD:22)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1555437060040.run(TempTestSuite1555437060040.groovy:35)]]></system-out>
+         <system-err><![CDATA[2019-04-16 19:51:10 - [TEST_CASE][ERROR] - Test Cases/UsingExcelFile_TDD: Test Cases/UsingExcelFile_TDD FAILED.
+Reason:
+groovy.lang.MissingPropertyException: No such property: response for class: Script1555432717688
+	at UsingExcelFile_TDD.run(UsingExcelFile_TDD:22)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1555437060040.run(TempTestSuite1555437060040.groovy:35)]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/UsingExcelFile_TDD" classname="Test Cases/UsingExcelFile_TDD" status="ERROR">
+         <error type="ERROR" message="Test Cases/UsingExcelFile_TDD FAILED.
+Reason:
+groovy.lang.MissingPropertyException: No such property: response for class: Script1555432717688
+	at UsingExcelFile_TDD.run(UsingExcelFile_TDD:22)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1555437060040.run(TempTestSuite1555437060040.groovy:35)
+"/>
+         <system-out><![CDATA[2019-04-16 19:51:11 - [TEST_CASE][ERROR] - Test Cases/UsingExcelFile_TDD: Test Cases/UsingExcelFile_TDD FAILED.
+Reason:
+groovy.lang.MissingPropertyException: No such property: response for class: Script1555432717688
+	at UsingExcelFile_TDD.run(UsingExcelFile_TDD:22)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1555437060040.run(TempTestSuite1555437060040.groovy:35)
+
+
+2019-04-16 19:51:11 - [TEST_STEP][PASSED] - response1 = sendRequest(findTestObject("CountryList/Currency", ["isoCode":isoCode])): Send request successfully
+
+2019-04-16 19:51:12 - [MESSAGE][INFO] - HAR: M:\KatalonStudio\SimpleRESTTest\Reports\DDT_TestSuite\20190416_195055\requests\main\8.har
+
+2019-04-16 19:51:12 - [MESSAGE][PASSED] - Send request successfully
+
+2019-04-16 19:51:12 - [TEST_STEP][PASSED] - response2 = sendRequest(findTestObject("CountryList/CountryCapital", ["isoCode":isoCode])): Send request successfully
+
+2019-04-16 19:51:12 - [MESSAGE][INFO] - HAR: M:\KatalonStudio\SimpleRESTTest\Reports\DDT_TestSuite\20190416_195055\requests\main\9.har
+
+2019-04-16 19:51:13 - [MESSAGE][PASSED] - Send request successfully
+
+2019-04-16 19:51:13 - [TEST_STEP][PASSED] - verifyElementText(response1, "CountryCurrencyResponse.CountryCurrencyResult.sName", currency1): Verify element text successfully
+
+2019-04-16 19:51:13 - [MESSAGE][PASSED] - Verify element text successfully
+
+2019-04-16 19:51:13 - [TEST_STEP][ERROR] - verifyElementText(response, "CapitalCityResponse.CapitalCityResult", capital): verifyElementText(response, "CapitalCityResponse.CapitalCityResult", capital) FAILED.
+Reason:
+groovy.lang.MissingPropertyException: No such property: response for class: Script1555432717688
+	at UsingExcelFile_TDD.run(UsingExcelFile_TDD:22)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1555437060040.run(TempTestSuite1555437060040.groovy:35)
+
+
+2019-04-16 19:51:13 - [MESSAGE][ERROR] - verifyElementText(response, "CapitalCityResponse.CapitalCityResult", capital) FAILED.
+Reason:
+groovy.lang.MissingPropertyException: No such property: response for class: Script1555432717688
+	at UsingExcelFile_TDD.run(UsingExcelFile_TDD:22)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1555437060040.run(TempTestSuite1555437060040.groovy:35)]]></system-out>
+         <system-err><![CDATA[2019-04-16 19:51:11 - [TEST_CASE][ERROR] - Test Cases/UsingExcelFile_TDD: Test Cases/UsingExcelFile_TDD FAILED.
+Reason:
+groovy.lang.MissingPropertyException: No such property: response for class: Script1555432717688
+	at UsingExcelFile_TDD.run(UsingExcelFile_TDD:22)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1555437060040.run(TempTestSuite1555437060040.groovy:35)]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2019-04-16 19:51:02 - [TEST_SUITE][ERROR] - DDT_TestSuite: Test Cases/UsingExcelFile_TDD FAILED.
+Reason:
+groovy.lang.MissingPropertyException: No such property: response for class: Script1555432717688
+	at UsingExcelFile_TDD.run(UsingExcelFile_TDD:22)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1555437060040.run(TempTestSuite1555437060040.groovy:35)]]></system-out>
+      <system-err><![CDATA[2019-04-16 19:51:02 - [TEST_SUITE][ERROR] - DDT_TestSuite: Test Cases/UsingExcelFile_TDD FAILED.
+Reason:
+groovy.lang.MissingPropertyException: No such property: response for class: Script1555432717688
+	at UsingExcelFile_TDD.run(UsingExcelFile_TDD:22)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1555437060040.run(TempTestSuite1555437060040.groovy:35)]]></system-err>
+   </testsuite>
+</testsuites>
